@@ -1,0 +1,233 @@
+/* Site Variables */
+
+:root {
+    --text-primary: purple;
+    --text-secondary: blue;
+    --text-aux: gold;
+    --background-primary: lightgrey;
+    --background-secondary: darkgrey;
+    --background-dark: rgb(32, 32, 32);
+    --padding-all: 1rem 1rem;
+    --padding-all2: 2rem 2rem;
+    --margin-all: 1rem 1rem;
+    --margin-all2: 2rem 2rem;
+}
+
+/* CSS Reset & Base Styling */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+* a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+/* Utility */
+
+.btn-light {
+    background: (--background-primary);
+    color: black;
+    align-content: center;
+    align-self: center;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.btn-light:hover {
+    background: var(--background-dark);
+    color: var(--text-aux);
+}
+
+/* Main Nav */
+
+#main-nav {
+    background: var(--background-dark);
+    color: var(--text-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-all);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#main-nav .logo img {
+    display: block;
+    height: 2rem;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#main-nav .nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+#main-nav .nav .nav-content {
+    padding: 0 .5rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+#main-nav .nav .nav-content a:hover {
+    color: var(--text-aux);
+}
+
+/* Top Img */
+
+.top-img {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Showcase */
+
+#showcase {
+    background-color: rgba(255, 218, 9, .8);
+}
+
+#showcase .showcase-content {
+    align-items: center;
+    text-align: center;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 3rem;
+    padding-top: 15%;
+    color: var(--text-primary);
+}
+
+#showcase .showcase-content p {
+    color: var(--text-primary);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 15% 15%;
+}
+
+/* about */
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-all);
+    background: var(--background-dark);
+}
+
+.about-left {
+    display: flex;
+    padding: var(--padding-all);
+    justify-content: center;
+}
+
+.about-left h1 {
+    padding-right: 1rem;
+    background: var(--background-dark);
+    color: var(--text-aux);
+    font-size: 2rem;
+    justify-self: center;
+    line-height: 2.5rem;
+    border-right: solid 1px var(--text-secondary);
+}
+
+.about-left p, .about-right p {
+    padding-right: 1rem;
+    color: var(--text-primary);
+    padding-left: 1rem;
+}
+
+.about-right {
+    display: flex;
+    padding: var(--padding-all);
+}
+
+.about-right h1 {
+    padding-right: 1rem;
+    background: var(--background-dark);
+    color: var(--text-aux);
+    font-size: 2rem;
+    justify-self: center;
+    line-height: 2.5rem;
+    border-right: solid 1px var(--text-secondary);
+}
+
+/* gigs */
+
+.gig-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    grid-gap: 1rem;
+    /* padding: var(--padding-all); */
+    background: var(--background-primary);
+}
+
+.gig-two h1, .gig-one h1, .gig-three h1 {
+    font-size: 2rem;
+    padding: var(--padding-all);
+    line-height: 2.5rem;
+    border-bottom: dotted 1px var(--text-secondary);
+}
+
+.gig-two p, .gig-one p, .gig-three p {
+    padding-top: 1rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.gig-two {
+    height: 100%;
+    background: var(--background-dark);
+    color: var(--text-secondary)
+}
+
+.gig-two h1 {
+    color: var(--text-aux);
+}
+
+/* Contact Form */
+
+#contact-us {
+    background: var(--background-primary);
+    display: flex;
+    border-top: dotted 1px var(--text-secondary);
+}
+
+.contact-us-container, .map {
+    flex: 1;
+    margin: var(--margin-all);
+}
+
+.form-group input {
+    display: block;
+    padding-bottom: 0.5rem;
+    width: 100%;
+    margin-right: 1rem;
+}
+
+.form-group text {
+    font-size: 1.5rem;
+}
+
+.form-group textarea {
+    display: block;
+    width: 100%;
+    margin-right: 1rem;
+}
+
+
+
+.map {
+    padding: var(--padding-all)
+}
