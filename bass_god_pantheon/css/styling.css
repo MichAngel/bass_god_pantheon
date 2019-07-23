@@ -88,6 +88,12 @@
 .top-img {
     height: 100vh;
     width: 100%;
+    display: block;
+    /**
+    NKWIK: By default, images are displayed inline. Inline elements sit on the text baseline, which leaves some room
+    for descenders (like on a lowercase 'y' or 'p'. By setting display to block, it resets where the element is positioned.
+    You could also use a different display property, just not inline or inline-block;
+     */
 }
 
 /* Showcase */
